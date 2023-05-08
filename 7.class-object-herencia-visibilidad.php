@@ -49,8 +49,8 @@ class MyClass
 
 $obj = new MyClass();
 echo $obj->public;    // Funciona bien
-echo $obj->protected; // Error Fatal
-echo $obj->private;   // Error Fatal
+//echo $obj->protected; // Error Fatal
+//echo $obj->private;   // Error Fatal
 $obj->printHello();   // Muestra Public, Protected y Private
 
 
@@ -67,14 +67,14 @@ class MyClass2 extends MyClass
     {
         echo $this->public;
         echo $this->protected;
-        echo $this->private;
+        //echo $this->private;
     }
 }
 
 $obj2 = new MyClass2();
 echo $obj2->public;    // Funciona bien
-echo $obj2->protected; // Error Fatal
-echo $obj2->private;   // Undefined
+//echo $obj2->protected; // Error Fatal
+//echo $obj2->private;   // Undefined
 $obj2->printHello();   // Muestra Public2, Protected2, Undefined
 
 ?>

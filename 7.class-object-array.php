@@ -2,27 +2,30 @@
 
     class Persona {
         //Atributos
-        public $nombre = array();
-        public $apellido = array();
+        private $nombre = array();
+        private $apellido = array();
 
-        //MÃ©todos
-        public function guardar($nombre, $apellido){
+        //Métodos
+        public function setGuardar($nombre, $apellido){
             $this->nombre[] = $nombre;
             $this->apellido[] = $apellido;
         }
-        public function mostrar(){
-            for($i=0; $i<count($this->nombre); $i++){
-                $this->formato($this->nombre[$i], $this->apellido[$i]);
+        public function getMostrar(){
+            for($i=0; $i<count($this->apellido); $i++){
+                $this->formatear($this->nombre[$i], $this->apellido[$i]);
             }
         }
-        public function formato($nombre, $apellido){
-            echo 'Nombre: ' . $nombre . '| Apellido: ' . $apellido . '<br>';
+        public function formatear($nombre, $apellido){
+            echo 'Nombre: ' . $nombre . ' | Apellido: ' . $apellido . '<br>';
         }
     }
 
     $persona = new Persona();
-    $persona->guardar('Jose', 'FernÃ¡ndez');
-    $persona->guardar('Arnau', 'Garcia');
-    $persona->mostrar();
+    $persona->getMostrar();
+    $persona->setGuardar('Jose', 'Fernández');
+    $persona->setGuardar('Arnau', 'Garcia');
+    $persona->setGuardar('Pedro', 'Jiménez');
+    $persona->setGuardar('Marc ', 'Esteve');
+    $persona->getMostrar();
 
 ?>
