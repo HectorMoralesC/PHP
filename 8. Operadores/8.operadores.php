@@ -1,10 +1,10 @@
 <?php 
 
-/* Operadores Aritm閠icos:
+/* Operadores Aritm茅ticos:
 +	Suma
 -	Resta
-*	Multiplicaci髇
-/	Divisi髇
+*	Multiplicaci贸n
+/	Divisi贸n
 %	Resto
 **	Exponente 10^6
 -- */
@@ -14,7 +14,7 @@
 // echo gettype($resultado);
 // echo $resultado;
 
-/* Operadores de Asignaci髇:
+/* Operadores de Asignaci贸n:
 =
 +=
 -=
@@ -42,7 +42,7 @@ $numero=10;
 $numero **= 3;
 //echo $numero; //1000
 
-/* Operadores de Comparaci髇:
+/* Operadores de Comparaci贸n:
 ==
 ===
 !=, <>
@@ -65,13 +65,13 @@ $variable = 'true';
 //< -1 
 
 //echo 'Igual valor?: '.   ($stringNumero==$numero) . '<br>'; //true
-//echo 'Id閚ticos?: ' .  ($stringNumero===$numero); //false
+//echo 'Id茅nticos?: ' .  ($stringNumero===$numero); //false
 
 // if ($stringNumero===$numero) {
-// 	echo 'Id閚ticos valor y tipo de $stringNumero y  $numero';
+// 	echo 'Id茅nticos valor y tipo de $stringNumero y  $numero';
 // }
 // else{
-//     echo 'stringNumero y numero no son id閚ticos';
+//     echo 'stringNumero y numero no son id茅nticos';
 // }
 
 /* Operadores de Incremento / Decremento:
@@ -117,7 +117,7 @@ $nombre .= " " . $apellidos;
 //echo $nombreCompleto . "<br>";
 
 
-/* Operadores L骻icos:
+/* Operadores L贸gicos:
 and, &&
 or, ||
 xor
@@ -126,10 +126,10 @@ xor
 $numero = 21;
 
 // if ($numero >= 10 or $numero > 20 and $numero > 1) {
-// 	echo "Se cumple toda la condici髇";
+// 	echo "Se cumple toda la condici贸n";
 // }
 // else{
-//     echo "No se cumple la condici髇";
+//     echo "No se cumple la condici贸n";
 // }
 
 $bool= false;
@@ -141,9 +141,9 @@ $bool= false;
 // }
 
 $array1=['a' =>'Hola', 'b'=> 'Hello'];
-$array2=['c' =>'Adi髎', 'd' =>'Adeu'];
+$array2=['c' =>'Adi贸s', 'd' =>'Adeu'];
 
-#NUEVA FUNCI覰 PRINT_R() muestra en pantalla la suma y en este caso, la suma es una fusi髇 de las claves y valores de ambas matrices
+#NUEVA FUNCI脫N PRINT_R() muestra en pantalla la suma y en este caso, la suma es una fusi贸n de las claves y valores de ambas matrices
 $fusionArrays=$array1 + $array2;
 // print_r($fusionArrays); 
 // echo '<br>';
@@ -159,20 +159,20 @@ $y=array("b" => "green","a" => "10" );
 //var_dump($x == $y); //BOOL(TRUE)
 //var_dump($x === $y); //BOOL(FALSE)
 
-#NUEVA FUNCI覰 EMPTY() vacia la variable?
+#NUEVA FUNCI脫N EMPTY() vacia la variable?
 // Si la "variable $user" esta vacia empty($user) = TRUE, asignamos a la variable $status = "anonymous"
-// echo $status = (empty($user)) ? "an髇imo" : "sesi髇 iniciada";
-// echo "<br>";
+//echo $status = (empty($user)) ? "an贸nimo" : "sesi贸n iniciada";
+//echo "<br>";
 
-// $user = "John Doe";
-// $user=NULL;
+//$user = "John Doe";
+//$user=NULL;
 // if empty($user) = FALSE, set $status = "logged in"
 //OPERADOR TERNARIO
-//echo $status = (empty($user)) ? "an髇imo" : 'sesi髇 iniciada y $user no esta vacia y es igual a '. $user;
+//echo $status = (empty($user)) ? "an贸nimo" : 'sesi贸n iniciada y $user no esta vacia y es igual a '. $user;
 
-//OPERADOR FUSI覰 NULA
-// variable $color es "rojo" if $color does not exist or is null
-// $color="blue";
-//echo $color = $color ?? "rojo";
+//OPERADOR FUSI脫N NULA
+//variable $color es "rojo" if $color does not exist or is null
+//$color="blue";
+echo $color = $color ?? "rojo (sin valor)";
 
 ?>
