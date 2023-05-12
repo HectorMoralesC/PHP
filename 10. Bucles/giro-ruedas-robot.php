@@ -5,8 +5,49 @@
 
 // 2. En función del valor de cada rueda, decimos hacia donde se dirige. Ejemplo: $VelRizq>$VelRder entonces el robot gira a la derecha.
 // Giro derecho, izquierdo y adelante, idem atrás
-$VelRizq=0;
-$VelRder=0;
+$VelRizq=-10;
+$VelRder=-5;
+/*
+if ($VelRizq>= 0 && $VelRder>= 0){
+
+    if($VelRizq== 0){
+        
+        if($VelRizq== $VelRder)
+        echo 'El robot está parado';
+
+        else
+        echo 'El robot está girando hacia la izquierda';
+
+    }
+    elseif($VelRder== 0){
+        
+        if($VelRizq== $VelRder)
+        echo 'El robot está parado';
+
+        else
+        echo 'El robot está girando hacia la derecha';
+
+    }
+    elseif ($VelRizq== 0 && $VelRder== 0){
+        echo 'El robot está parado';
+    }
+    else
+    echo 'Va palante';
+    
+
+
+
+
+}
+else
+echo 'Va patrás';
+
+*/
+
+
+
+
+
 
 if ($VelRizq>=0 && $VelRder>=0) {
     //O esta parado el robot o va hacia delante

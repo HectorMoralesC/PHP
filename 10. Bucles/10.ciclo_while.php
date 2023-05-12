@@ -2,10 +2,10 @@
 
 $x = 20;
 
-while($x >= 1){
-	echo $x . '<br>';
+while($x <= 30){
+	echo $x++ . '<br>';
 
-	$x--;
+	
 }
 
 ?>
