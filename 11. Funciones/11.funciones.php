@@ -32,4 +32,3 @@ echo saludo('Manuel') . '<br />';
 
 // $resultado = sumar(10, 15);
 
-?>
