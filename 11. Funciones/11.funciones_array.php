@@ -12,6 +12,14 @@ $semana = array(
  	'Jueves', 'Viernes', 'Sabado', 'Domingo'
 );
 
+$semana1 = array(
+	'Lunes', 'Martes', 'Miercoles',
+ 	'Jueves', 'Viernes', 'Sabado', 'Domingo'
+);
+$semana2 = array(
+	'Lunes', 'Martes', 'Miercoles',
+ 	'Jueves', 'Viernes', 'Sabado'
+);
 // $ultimo_dia = array_pop($semana); //Extraer el último valor del array en $semana y guardandolo en la variable $ultimo_dia
 // foreach ($semana as $dia) {
 // 	echo $dia . '<br />';
@@ -27,5 +35,11 @@ $semana = array(
 
 $semana_reverse = array_reverse($semana); //Orden inverso del array
 echo join(', ', $semana_reverse);
+echo '<br>';
 
+
+//Ejercicio de a�adir 'y' en el ultimo valor del array
+$ultimo_dia = array_pop($semana1); //array_pop sirve para leer el ultimo array
+echo join(', <br />', $semana1);
+echo ' y <br />', $ultimo_dia;
 ?>
