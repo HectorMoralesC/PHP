@@ -5,7 +5,7 @@ function suma($numero, $numero2){
 }
 
 // include 'vista.php'; //Warning, cuando el archivo "incluido" no es importante
-require 'vista.php'; //Falta error, cuando el archivo es indispensable, sino el resto de la página no deberia visualizarse
+require 'vista.php'; //Fatal error, cuando el archivo es indispensable, sino el resto de la página no deberia visualizarse
 
 // include_once 'vista.php' //Solo una vez
 // require_once 'vista.php' //Solo una vez

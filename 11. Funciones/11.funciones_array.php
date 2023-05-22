@@ -38,7 +38,7 @@ echo join(', ', $semana_reverse);
 echo '<br>';
 
 
-//Ejercicio de a�adir 'y' en el ultimo valor del array
+//Ejercicio de añadir 'y' en el ultimo valor del array
 $ultimo_dia = array_pop($semana1); //array_pop sirve para leer el ultimo array
 echo join(', <br />', $semana1);
 echo ' y <br />', $ultimo_dia;

@@ -7,7 +7,7 @@ $numero = 7; //Variable global = acceso desde cualquier parte del código except
 // }
 // mostrarNumero(); // Dará un error, ya que no encuentra $numero dentro de la función
 
-# Para usarla dentro de la función pasar como parámentro
+# Para usarla dentro de la función pasar como parámentro/argumento
 // function mostrarNumero($numero){
 // 	echo $numero
 // }
