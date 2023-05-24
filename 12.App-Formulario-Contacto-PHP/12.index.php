@@ -10,7 +10,9 @@ if (isset($_POST['submit'])) {
 
 	if (!empty($nombre)) {
 		$nombre = trim($nombre);
-		$nombre = filter_var($nombre, FILTER_SANITIZE_STRING);
+		$nombre = htmlspecialchars($nombre);
+		$nombre = stripslashes($nombre);
+		// $nombre = filter_var($nombre, FILTER_SANITIZE_STRING);
 	} else {
 		$errores .= 'Por favor escribe un nombre <br />';
 	}
@@ -34,13 +36,15 @@ if (isset($_POST['submit'])) {
 	}
 
 	if(!$errores){
+		//Si no hay errores envia un correo
+		//En localhost y XAMPP es necesaria una config extra
 		$enviar_a = 'tunombre@tuempresa.com';
 		$asunto = 'Correo enviado desde miPagina.com';
 		$mensaje_preparado = "De: $nombre \n";
 		$mensaje_preparado .= "Correo: $correo \n";
 		$mensaje_preparado .= "Mensaje: " . $mensaje;
-
 		//mail($enviar_a, $asunto, $mensaje_preparado);
+
 		$enviado = 'true';
 	}
 
