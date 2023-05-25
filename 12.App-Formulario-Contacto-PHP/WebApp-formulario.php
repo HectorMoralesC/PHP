@@ -8,14 +8,28 @@
 </head>
 <body>
 	<div class="wrap">
-        <form action="index-formulario.php" method="GET">
+        
+<!-- Primer formulario con el botón "submit" -->
+<form action="index-formulario.php" method="GET">
+  <!-- Campos del primer formulario -->
+  <input type="text" name="clave1" placeholder="Nombre" required>
+  <input type="text" name="clave3" placeholder="Gmail" required>
+  <input type="text" name="clave2" placeholder="Mensaje" required>
 
-            <input type="text" name="clave1" placeholder="Nombre:" required>
-            <input type="text" name="clave3" placeholder="Gmail:" required>
-            <input type="text" name="clave2" placeholder="Mensaje:">
+  <!-- Botón de envío del primer formulario -->
+  <input type="submit" name="submit" value="Enviar GET">
+</form>
 
-			<input type="submit" name="submit" class="btn btn-primary" value="Enviar Correo">
-		</form>
+<!-- Segundo formulario con el botón "submit2" -->
+<form action="index-formulario.php" method="POST">
+  <!-- Campos del segundo formulario -->
+  <input type="text" name="clave1" placeholder="Nombre" required>
+  <input type="text" name="clave3" placeholder="Gmail" required>
+  <input type="text" name="clave2" placeholder="Mensaje" required>
+
+  <!-- Botón de envío del segundo formulario -->
+  <input type="submit" name="submit2" value="Enviar POST">
+</form>
 	</div>
 </body>
 </html>
