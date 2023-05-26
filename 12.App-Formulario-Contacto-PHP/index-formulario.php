@@ -1,6 +1,6 @@
 <?php
 
-
+$enviado = false;
 
 //GET
 if ($_SERVER['REQUEST_METHOD'] === 'GET') {
@@ -12,6 +12,10 @@ if (isset($GET['submit'])) {
         $valor1 = $_GET['clave1'];
         $valor2 = $_GET['clave2'];
         $valor3 = $_GET['clave3'];
+            
+    // Setear la variable $enviado a true para indicar que se ha enviado correctamente
+    $enviado = true;
+
 
         // Resto del código de saneamiento y validación
     } else {

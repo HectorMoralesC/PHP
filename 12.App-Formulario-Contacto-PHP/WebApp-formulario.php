@@ -35,8 +35,13 @@
 <br>
 <br>
   
-
+ <?php
+    if ($enviado = true) {
+      echo "<p>Datos enviados correctamente</p>";
+    }
+      ?>
 </form>
 	</div>
+ 
 </body>
 </html>
