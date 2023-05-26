@@ -7,6 +7,9 @@
 	
 </head>
 <body>
+<!-- Botón para volver al formulario -->
+<!--<a href="WebApp-formulario.php"><button>Volver al formulario</button></a>-->
+<br>
 	<div class="wrap">
         
 <!-- Primer formulario con el botón "submit" -->
@@ -29,6 +32,10 @@
 
   <!-- Botón de envío del segundo formulario -->
   <input type="submit" name="submit2" value="Enviar POST">
+<br>
+<br>
+  
+
 </form>
 	</div>
 </body>
