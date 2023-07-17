@@ -7,7 +7,7 @@
     }
 
     //Consulta para generar los primeros 5 registros de Productos
-    $tablaCinco = $conexion->query('SELECT * FROM productos;');
-    $resultadosTabla = $tablaCinco->fetchAll();
+    $tablaClientes = $conexion->query('SELECT * FROM CLIENTES_COPIA;');
+    $resultSet = $tablaClientes->fetchAll();
 
 ?>
